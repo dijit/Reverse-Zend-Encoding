@@ -6,7 +6,7 @@
 #include "zend_API.h"
 #include "zend_builtin_functions.h"
 #include "zend_ini.h"
-#include "dijit/test.h"
+#include "diablo/test.h"
 
 
 #ifdef ZTS
@@ -34,5 +34,5 @@ if (EG(active_op_array)) {
     va_end(files);
     EG(active_op_array) = orig_op_array;
 
-    return SUCCESS;
+    return 0;
 }
